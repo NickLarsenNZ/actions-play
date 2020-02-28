@@ -20,5 +20,5 @@ jobs:
         DEFAULT_BUMP: patch
     - name: printTag
       env:
-        GIT_TAG: ${{ steps.bumpTag.outputs.tag }}
+        GIT_TAG: ${{ steps.bumpTag.outputs.new_tag }}
       run: echo "$GIT_TAG"
